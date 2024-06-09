@@ -1,14 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  background: border-box;
+  box-sizing: border-box; /* Changed background to box-sizing */
 }
 
 body {
   min-width: 320px;
   background-color: #2b4162;
   background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
-
 }
 
 img {
@@ -17,27 +16,21 @@ img {
 
 a {
   text-decoration: none;
-  color: black
+  color: black;
 }
 
 main {
   height: 90vh;
   margin-top: 100px;
   position: relative;
-
 }
 
 .connection {
   height: 105vh;
-
 }
 
 .profile-image img {
   width: 100%;
-
-
-
-
 }
 
 .btn {
@@ -49,10 +42,7 @@ main {
   margin-left: 85px;
   margin-top: 20px;
   background-color: rgb(0, 153, 255);
-
-
 }
-
 
 .random {
   margin-left: 30px;
@@ -64,24 +54,15 @@ main {
 }
 
 .head .container {
-
   display: flex;
-
-  /* Existing styles for your navbar */
   position: fixed;
   top: 0;
-  /* Position the navbar at the top of the viewport */
   left: 0;
-  /* Position the navbar at the left side of the viewport */
   right: 0;
-  /* Position the navbar at the right side of the viewport */
   z-index: 999;
-  /* Ensure the navbar is on top of other elements */
-
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: fixed;
   background-color: #f9fcff;
   background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
 }
@@ -89,7 +70,6 @@ main {
 li {
   list-style: none;
 }
-
 
 .nav-bar ul {
   padding: 10px;
@@ -101,31 +81,29 @@ li {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-
-  & li a {
-    position: relative;
-
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: -0.3rem;
-      left: 0;
-      width: 0%;
-      border-bottom: 0.1rem solid #0047AB;
-      transition: all 0.3s linear;
-    }
-  }
-
-  & li a:hover {
-    color: #0047AB;
-  }
-
-  & li a:hover:after {
-    width: 100%;
-  }
 }
 
+.nav-bar ul li a {
+  position: relative;
+}
 
+.nav-bar ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+  width: 0%;
+  border-bottom: 0.1rem solid #0047AB;
+  transition: all 0.3s linear;
+}
+
+.nav-bar ul li a:hover {
+  color: #0047AB;
+}
+
+.nav-bar ul li a:hover:after {
+  width: 100%;
+}
 
 .prime {
   display: flex;
@@ -136,16 +114,11 @@ li {
   margin: 50px;
 }
 
-
-
-
 .primary {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   position: relative;
   padding: 2rem;
-
-
 }
 
 h1 {
@@ -167,10 +140,6 @@ h1 span {
   -webkit-text-fill-color: transparent;
 }
 
-
-
-
-
 .btn-one {
   margin-top: 50px;
 }
@@ -184,7 +153,6 @@ p {
   line-height: 1.5;
   text-align: justify;
   font-family: monospace;
-
 }
 
 p span {
@@ -213,7 +181,6 @@ h3 {
   margin-left: 400px;
 }
 
-
 .project ul {
   justify-content: center;
   display: flex;
@@ -229,9 +196,6 @@ h3 {
 .names {
   padding: 40px;
   font-family: monospace;
-
-
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -244,10 +208,7 @@ h3 {
   font-size: 20px;
   border-radius: 10px;
   background-color: #2b4162;
-
 }
-
-
 
 .links ul {
   display: flex;
@@ -259,7 +220,6 @@ h3 {
   width: 20%;
   padding: 30px;
   text-align: center;
-
 }
 
 .link-list a {
@@ -279,7 +239,6 @@ h3 {
   border-radius: 10px;
 }
 
-
 .list-projects a {
   text-decoration: none;
   color: white;
@@ -296,5 +255,137 @@ h3 {
   margin-left: 100px;
   text-align: justify;
   line-height: 1.9;
+}
 
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .nav-bar ul {
+    gap: 2rem;
+  }
+
+  .primary {
+    grid-template-columns: 1fr;
+  }
+
+  .h1 {
+    font-size: 45px;
+    padding: 10px 30px;
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 15px;
+  }
+
+  .connect-heading {
+    margin-left: 200px;
+  }
+
+  .names {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  .links ul {
+    margin-left: 400px;
+  }
+
+  .info ul {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .about p {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .prime, .primary, .project ul, .info ul {
+    margin: 20px;
+    padding: 1rem;
+  }
+
+  .prime {
+    margin: 20px 0;
+  }
+
+  .primary {
+    padding: 1rem;
+  }
+
+  .h1 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+  .btn {
+    margin-left: 0;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .connect-heading, .names, .links ul {
+    margin-left: 50px;
+  }
+
+  .info ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about p {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar ul {
+    gap: 0.5rem;
+  }
+
+  .h1 {
+    font-size: 28px;
+    padding: 5px 15px;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .connect-heading {
+    margin-left: 20px;
+  }
+
+  .names, .links ul {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .about p {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
