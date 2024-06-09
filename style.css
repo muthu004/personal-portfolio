@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: border-box;
+}
+
+body {
+  min-width: 320px;
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+
+}
+
+img {
+  width: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+main {
+  height: 90vh;
+  margin-top: 100px;
+  position: relative;
+
+}
+
+.connection {
+  height: 105vh;
+
+}
+
+.profile-image img {
+  width: 100%;
+
+
+
+
+}
+
+.btn {
+  padding: 10px 40px;
+  font-size: 18px;
+  display: inline-block;
+  background: border-box;
+  border-radius: 5px;
+  margin-left: 85px;
+  margin-top: 20px;
+  background-color: rgb(0, 153, 255);
+
+
+}
+
+
+.random {
+  margin-left: 30px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.head .container {
+
+  display: flex;
+
+  /* Existing styles for your navbar */
+  position: fixed;
+  top: 0;
+  /* Position the navbar at the top of the viewport */
+  left: 0;
+  /* Position the navbar at the left side of the viewport */
+  right: 0;
+  /* Position the navbar at the right side of the viewport */
+  z-index: 999;
+  /* Ensure the navbar is on top of other elements */
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: fixed;
+  background-color: #f9fcff;
+  background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+}
+
+li {
+  list-style: none;
+}
+
+
+.nav-bar ul {
+  padding: 10px;
+  display: flex;
+  gap: 3.2rem;
+  text-transform: capitalize;
+  align-items: center;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+  & li a {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -0.3rem;
+      left: 0;
+      width: 0%;
+      border-bottom: 0.1rem solid #0047AB;
+      transition: all 0.3s linear;
+    }
+  }
+
+  & li a:hover {
+    color: #0047AB;
+  }
+
+  & li a:hover:after {
+    width: 100%;
+  }
+}
+
+
+
+.prime {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin-top: 60px;
+  margin: 50px;
+}
+
+
+
+
+.primary {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  position: relative;
+  padding: 2rem;
+
+
+}
+
+h1 {
+  padding: 10px 60px;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 55px;
+  color: #dee4ea;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 span {
+  position: relative;
+  background: linear-gradient(179.5deg, rgb(255, 230, 69) 3.3%, rgb(255, 157, 73) 96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+.btn-one {
+  margin-top: 50px;
+}
+
+p {
+  margin-left: 65px;
+  margin-top: -10px;
+  padding: 25px;
+  font-size: 23px;
+  color: white;
+  line-height: 1.5;
+  text-align: justify;
+  font-family: monospace;
+
+}
+
+p span {
+  color: aquamarine;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: xx-large;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 80px;
+  margin-top: 60px;
+  padding: 30px;
+  color: yellow;
+}
+
+.about-2 {
+  margin-top: 100px;
+}
+
+.connect-heading {
+  margin-top: 100px;
+  padding-top: 100px;
+  margin-left: 400px;
+}
+
+
+.project ul {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-left: 80px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.names {
+  padding: 40px;
+  font-family: monospace;
+
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+  margin-bottom: 20px;
+  margin-left: 450px;
+  margin-right: 450px;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #2b4162;
+
+}
+
+
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-left: 630px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  width: 20%;
+  padding: 30px;
+  text-align: center;
+
+}
+
+.link-list a {
+  margin-right: 40px;
+  padding: 25px;
+}
+
+.info ul {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  gap: 60px;
+  padding: 50px;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 60px;
+  border-radius: 10px;
+}
+
+
+.list-projects a {
+  text-decoration: none;
+  color: white;
+}
+
+.icon-list :nth-child(8),
+.icon-list :nth-child(9),
+.icon-list :nth-child(10) {
+  margin-top: 5px;
+}
+
+.about p {
+  margin-right: 100px;
+  margin-left: 100px;
+  text-align: justify;
+  line-height: 1.9;
+
+}
