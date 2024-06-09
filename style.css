@@ -37,9 +37,10 @@ a {
 .random {
   margin-left: 30px;
   padding: 10px;
-  font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
 }
 
 .head .container {
@@ -76,7 +77,30 @@ li {
   text-transform: capitalize;
   align-items: center;
   color: black;
-  font-weight: bold;
+   font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  & li a {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -0.3rem;
+      left: 0;
+      width: 0%;
+      border-bottom: 0.1rem solid aqua;
+      transition: all 0.3s linear;
+    }
+  }
+  & li a:hover {
+    color: aqua;
+  }
+
+  & li a:hover:after {
+    width: 100%;
+  }
 }
 
 main {
@@ -156,10 +180,12 @@ p {
 
 
 h3 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: xx-large;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   margin-left: 80px;
   margin-top: 60px;
-  font-size: 30px;
   padding: 30px;
   color: yellow;
 }
@@ -226,16 +252,18 @@ h3 {
 
 .info ul {
   display: flex;
+  justify-content: space-between;
   flex-flow: wrap;
-  gap: 70px;
+  gap: 60px;
   padding: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 50px;
-  margin-right: 30px;
+  margin-right: 60px;
   border-radius: 10px;
-  background-color: #2b4162;
+background-color: #0047AB	;
 }
+
 
 .list-projects a {
   text-decoration: none;
