@@ -223,11 +223,12 @@ h3 {
   margin-left: 39.375rem;
   margin-bottom: 1.25rem;
   margin-top: 2.5rem;
-  width: 20%;
   padding:1.875rem ;
   text-align: center;
 }
-
+.links img{
+  width: 30%;
+}
 .link-list a {
   margin-right: 2.5rem;
   padding:1.563rem ;
@@ -263,20 +264,46 @@ h3 {
   line-height: 1.9;
 }
 
-@media (width<=972px) {
+@media (width<=1280px) {
   html{
     font-size: 60.5%;
   }
   p{
     font-size:2rem;
   }
+  .project img{
+    width: 50%;
+  }
+  .icon-list img{
+    width:6%
+  }
   
 }
+@media (width<=880px) {
 
+  html{
+    font-size: 50.5%;
+  }
+  p{
+    font-size:1.5rem;
+  }
+  .project img{
+    width: 50%;
+  }
+  .icon-list img{
+    width:8%
+  }
+}
 
 @media (width<=672px) {
   html{
     font-size: 40.5%;
+  }
+  h3{
+    font-size:4rem;
+  }
+  p{
+    font-size: 3rem ;
   }
   .project img{
     width: 50%;
@@ -288,10 +315,21 @@ h3 {
 
 @media (width<=500px) {
   main{
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom:0rem;
   }
+
+
   html{
     font-size: 35.5%;
+  }
+  h1{
+    font-size: 6.5rem;
+    padding: 2rem;
+    margin-left: 4rem;
   }
   .primary{
     display: flex;
@@ -299,6 +337,7 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30rem;
   }
 
   h3{
@@ -320,4 +359,29 @@ padding: 0rem 5rem;
 text-align: center;
 font-size: 2rem;
 }
+.project ul{
+  
+}
+
+.nav-bar{
+  margin: 0.8rem;
+  font-size: 1.75rem;
+}
+.random{
+  font-size: 2.5rem;
+}
+
+.connection{  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: -20rem;
+  margin-bottom:0rem;
+}
+.links img{
+  width: 20%;
+  margin-left: -10rem;
+}
+
 }
