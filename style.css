@@ -9,6 +9,10 @@ body {
   background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 }
 
+html{
+  font-size: 92.5%;
+
+}
 img {
   width: 5%;
 }
@@ -256,3 +260,33 @@ h3 {
   line-height: 1.9;
 }
 
+@media (width<=972px) {
+  html{
+    font-size: 60.5%;
+  }
+  
+}
+
+@media (width<=672px) {
+  html{
+    font-size: 40.5%;
+  }
+  
+}
+
+@media (width<=500px) {
+  main{
+    height: 100vh;
+  }
+  html{
+    font-size: 30.5%;
+  }
+  .primary{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+}
