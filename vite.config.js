@@ -9,6 +9,7 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"), 
         about: resolve(__dirname, "About.html"), 
         connect: resolve(__dirname, "connect.html"),
+        download:resolve(__dirname, "resume.pdf"),
         
       },
     },
