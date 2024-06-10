@@ -181,7 +181,9 @@ h3 {
 .connect-heading {
   margin-top: 6.25rem;
   padding-top: 6.25rem;
-  margin-left: 25rem;
+  margin-left: 0rem;
+  text-align: center;
+  font-size: 4rem;
 }
 
 .project ul {
@@ -218,6 +220,8 @@ h3 {
 
 .links ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   row-gap: 0.625rem;
   margin-left: 39.375rem;
@@ -227,7 +231,8 @@ h3 {
   text-align: center;
 }
 .links img{
-  width: 30%;
+  width: 10%;
+  margin-left: -40rem;
 }
 .link-list a {
   margin-right: 2.5rem;
@@ -254,6 +259,7 @@ h3 {
 
 
 
+
 .about p {
   margin-right: 6.25rem;
   margin-left: 6.25rem;
@@ -262,6 +268,14 @@ h3 {
 }
 
 @media (width<=1280px) {
+  main{
+    display: flex;
+    flex-direction:column;
+  justify-content: center;
+  align-items: center;
+    height: 100vh;
+
+  }
   html{
     font-size: 60.5%;
   }
@@ -274,9 +288,31 @@ h3 {
   .icon-list img{
     width:6%
   }
+  .connection{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom:0rem;
+  }
   
 }
 @media (width<=880px) {
+  main{
+    height: 100vh;
+    
+  }
+  .primary{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;}
+
+    .profile-image{
+      width: 100%;
+    }
 
   html{
     font-size: 50.5%;
@@ -293,9 +329,35 @@ h3 {
   .info ul {
 justify-content: start;
 }
+.connection{  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.links img{
+  width: 20%;
+}
+.connect-heading{
+  font-size: 5rem;}
 }
 
 @media (width<=672px) {
+  main{
+    height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+
+  }
+  .primary{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   html{
     font-size: 40.5%;
   }
@@ -311,6 +373,11 @@ justify-content: start;
   .icon-list img{
     width:10%
   }
+  .links img{
+    width: 20%;
+  }
+  .connect-heading{
+    font-size: 5rem;}
 }
 
 @media (width<=500px) {
@@ -319,7 +386,6 @@ justify-content: start;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-bottom:0rem;
   }
 
 
@@ -368,7 +434,8 @@ font-size: 2rem;
   font-size: 2.5rem;
 }
 
-.connection{  display: flex;
+.connection{  
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -379,6 +446,10 @@ font-size: 2rem;
 .links img{
   width: 20%;
   margin-left: -10rem;
+}
+.connect-heading{
+  font-size: 5rem;
+  margin-left: 30rem;
 }
 
 }
