@@ -18,9 +18,14 @@ img {
 }
 
 a {
+   -webkit-tap-highlight-color: transparent;  /* not a standard one,dont use in production level; */
   text-decoration: none;
   color: black;
+
 }
+
+
+
 
 main {
   height: 90vh;
@@ -381,6 +386,7 @@ justify-content: start;
 }
 
 @media (width<=500px) {
+  
   main{
   display: flex;
   justify-content: center;
