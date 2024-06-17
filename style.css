@@ -282,6 +282,10 @@ h3 {
   text-align: justify;
   line-height: 1.9;
 }
+.btn-two{
+  font-size: 1.10rem;
+font-weight:bold;
+}
 
 @media (width<=1280px) {
   main{
@@ -316,7 +320,10 @@ h3 {
   .info ul {
     justify-content: start;
     }
-  
+    .btn-two{
+      font-size: 1.25rem;
+  font-weight:bold;
+    }
 }
 @media (width<=880px) {
   main{
@@ -367,6 +374,10 @@ justify-content: start;
     justify-content: flex-start;
     align-items: flex-start;
   }
+  .btn-two{
+    font-size: 1.75rem;
+font-weight:bold;
+  }
 }
 
 @media (width<=672px) {
@@ -413,6 +424,10 @@ justify-content: start;
       justify-content: flex-start;
       align-items: flex-start;
     }
+    .btn-two{
+      font-size: 1.5rem;
+  font-weight:bold;
+    }
 }
 
 @media (width<=500px) {
@@ -423,6 +438,7 @@ justify-content: start;
   align-items: center;
   height: 100vh;
   }
+
 
 
   html{
@@ -509,6 +525,8 @@ font-size: 2rem;
 
 .btn-two{
   margin-left: 5.5rem;
+  font-size: 1.5rem;
+  font-weight:bold;
 
 }
 

@@ -6,12 +6,11 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"), 
-        about: resolve(__dirname, "About.html"), 
+        main: resolve(__dirname, "index.html"),
+        about: resolve(__dirname, "About.html"),
         connect: resolve(__dirname, "connect.html"),
-        download:resolve(__dirname, "resume.pdf"),
-        
       },
     },
+    assetsInclude: [resolve(__dirname, "resume.pdf")],
   },
 });
