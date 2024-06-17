@@ -1,0 +1,32 @@
+{
+    "headers": [
+      {
+        "source": "/(.*).pdf",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/pdf"
+          },
+          {
+            "key": "Content-Disposition",
+            "value": "attachment"
+          }
+        ]
+      }
+    ],
+    "builds": [
+      {
+        "src": "index.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "About.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "connect.html",
+        "use": "@vercel/static"
+      }
+    ]
+  }
+  
