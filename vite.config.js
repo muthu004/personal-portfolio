@@ -2,6 +2,7 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
 
+
 export default defineConfig({
   build: {
     rollupOptions: {
@@ -10,9 +11,12 @@ export default defineConfig({
         about: resolve(__dirname, "About.html"), 
         connect: resolve(__dirname, "connect.html"),
         
-        
+
         
       },
     },
+    assetsInclude: ['**/*.pdf'],
+
   },
+
 });
