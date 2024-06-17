@@ -174,7 +174,7 @@ h3 {
   font-weight: 600;
   font-style: normal;
   margin-left: 5rem;
-  margin-top: 3.75rem;
+  margin-top: 5rem;
   padding: 1.875rem;
   color: yellow;
 }
@@ -399,7 +399,7 @@ justify-content: start;
     font-size: 35.5%;
   }
   h1{
-    font-size: 6.5rem;
+    font-size: 5rem;
     padding: 2rem;
     margin-left: 4rem;
   }
@@ -414,6 +414,10 @@ justify-content: start;
 
   h3{
     font-size:2.5rem;
+    margin-top:6rem;
+  }
+  .about-2{
+    margin-top: 10rem;
   }
   p{
     font-size: 2rem ;
@@ -427,10 +431,13 @@ justify-content: start;
   }
  
 .project a{
+  width: 110px;
 padding: 0rem 5rem;
-text-align: center;
+text-align:center ;
 font-size: 2rem;
 }
+
+
 
 .nav-bar{
   margin: 0.8rem;
