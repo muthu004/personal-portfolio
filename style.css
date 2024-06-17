@@ -50,6 +50,7 @@ main {
   margin-left: 5.313rem;
   margin-top: 1.25rem;
   background-color: rgb(0, 153, 255);
+  cursor: pointer;
 }
 
 .random {
@@ -152,11 +153,21 @@ h1 span {
   margin-top: 50px;
 }
 
+.certificate{
+  display: flex;
+  align-items: center;
+
+}
+
+.btn-two{
+  margin-bottom: 2rem;
+  margin-left: 7.5rem;
+}
 p {
   margin-left: 4.063rem;
   margin-top: -0.625rem;
   padding: 1.563rem;
-  font-size: 1.438rem;
+  font-size: 1.5rem;
   color: white;
   line-height: 1.5;
   text-align: justify;
@@ -246,7 +257,7 @@ h3 {
 
 .info ul {
   display: flex;
-  justify-content: space-between;
+  justify-content:start;
   flex-flow: wrap;
   
   gap:3.75rem ;
@@ -287,11 +298,12 @@ h3 {
   p{
     font-size:2rem;
   }
-  .project img{
-    width: 50%;
+  
+  .project ul{
+    margin: 0rem 7rem;
   }
   .icon-list img{
-    width:6%
+    width:5%
   }
   .connection{  
     display: flex;
@@ -301,6 +313,9 @@ h3 {
     height: 100vh;
     margin-bottom:0rem;
   }
+  .info ul {
+    justify-content: start;
+    }
   
 }
 @media (width<=880px) {
@@ -346,6 +361,12 @@ justify-content: start;
 }
 .connect-heading{
   font-size: 5rem;}
+  .certificate{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 @media (width<=672px) {
@@ -372,6 +393,9 @@ justify-content: start;
   p{
     font-size: 3rem ;
   }
+  .project ul{
+    margin: 0rem 0rem;
+  }
   .project img{
     width: 50%;
   }
@@ -383,6 +407,12 @@ justify-content: start;
   }
   .connect-heading{
     font-size: 5rem;}
+    .certificate{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
 }
 
 @media (width<=500px) {
@@ -470,5 +500,17 @@ font-size: 2rem;
   font-size: 5rem;
   margin-left: 20rem;
 }
+.certificate{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.btn-two{
+  margin-left: 5.5rem;
+
+}
+
 
 }
