@@ -415,19 +415,25 @@ justify-content: start;
   h3{
     font-size:2.5rem;
     margin-top:6rem;
+    margin-left: 3rem;
   }
   .about-2{
-    margin-top: 10rem;
+    margin-top: 12rem;
   }
   p{
     font-size: 2rem ;
+  }
+  .about p{
+    margin-left: 3.75rem;
   }
   
   .project img{
     width: 100%;
   }
   .icon-list img{
-    width:10%
+    width:10%;
+    margin-left: -2rem;
+    
   }
  
 .project a{
