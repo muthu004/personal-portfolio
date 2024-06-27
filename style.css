@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
@@ -9,16 +9,18 @@ body {
   background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 }
 
-html{
+html {
   font-size: 92.5%;
 
 }
+
 img {
   width: 5%;
 }
 
 a {
-   -webkit-tap-highlight-color: transparent;  /* not a standard one,dont use in production level; */
+  -webkit-tap-highlight-color: transparent;
+  /* not a standard one,dont use in production level; */
   text-decoration: none;
   color: black;
 
@@ -44,8 +46,8 @@ main {
 .btn {
   padding: 0.625rem 2.5rem;
   font-size: 1.125rem;
-font-family: poppins;
-font-weight: 600;
+  font-family: poppins;
+  font-weight: 600;
   display: inline-block;
   background: border-box;
   border-radius: 0.313rem;
@@ -57,7 +59,7 @@ font-weight: 600;
 
 .random {
   margin-left: 1.875rem;
-  padding:0.625rem ;
+  padding: 0.625rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -121,7 +123,7 @@ li {
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  margin-top: 3.75rem ;
+  margin-top: 3.75rem;
   margin: 3.125rem;
 }
 
@@ -133,7 +135,7 @@ li {
 }
 
 h1 {
-  padding:  0.625rem 3.75rem;
+  padding: 0.625rem 3.75rem;
   margin-left: 1.875rem;
   margin-top: 1.875rem;
   font-size: 3.438rem;
@@ -155,18 +157,19 @@ h1 span {
   margin-top: 50px;
 }
 
-.certificate{
+.certificate {
   display: flex;
   align-items: center;
 
 }
 
-.btn-two{
+.btn-two {
   margin-bottom: 2rem;
   margin-left: 7.5rem;
   font-size: 1.10rem;
 
 }
+
 p {
   margin-left: 4.063rem;
   margin-top: -0.625rem;
@@ -195,7 +198,7 @@ h3 {
 }
 
 .about-2 {
-  margin-top:6.25rem ;
+  margin-top: 6.25rem;
 }
 
 .connect-heading {
@@ -207,15 +210,15 @@ h3 {
 }
 
 .project ul {
-  justify-content: center;
+  justify-content: space-between;
+  gap: 2rem;
   display: flex;
-  flex-direction: column;
-  gap: 1.875rem;
   align-items: center;
   margin-left: 5rem;
   padding: 1.25rem;
   margin-bottom: 1.25rem;
   margin-top: 2.5rem;
+  margin-right: 5rem;
 }
 
 .names {
@@ -226,17 +229,20 @@ h3 {
   justify-content: center;
   text-align: center;
   gap: 3.125rem;
-  margin-bottom:1.25rem;
-  margin-left: 28.125rem;
-  margin-right: 28.125rem;
+  margin-bottom: 1.25rem;
   align-items: center;
   font-size: 1.25rem;
   border-radius: 0.625rem;
-  background-color:#2b4162;
+  background-color: transparent;
+  border: 2px solid white;
+  height: 30rem;
 }
-.names img{
-  width: 35%;
+
+.names img {
+  width: 55%;
+  object-fit: cover;
 }
+
 
 .links ul {
   display: flex;
@@ -247,24 +253,26 @@ h3 {
   margin-left: 39.375rem;
   margin-bottom: 1.25rem;
   margin-top: 2.5rem;
-  padding:1.875rem ;
+  padding: 1.875rem;
   text-align: center;
 }
-.links img{
+
+.links img {
   width: 10%;
   margin-left: -40rem;
 }
+
 .link-list a {
   margin-right: 2.5rem;
-  padding:1.563rem ;
+  padding: 1.563rem;
 }
 
 .info ul {
   display: flex;
-  justify-content:start;
+  justify-content: start;
   flex-flow: wrap;
-  
-  gap:3.75rem ;
+
+  gap: 3.75rem;
   padding: 3.125rem;
   margin-top: 1.25rem;
   margin-left: 4.375rem;
@@ -272,10 +280,19 @@ h3 {
   border-radius: 0.625rem;
 }
 
+.icon-list img {
+  border: 1px solid white;
+  padding: 2rem;
+  object-fit: cover;
+  width: 12%;
+  border-radius: 5px;
+}
+
 .list-projects a {
   text-decoration: none;
   color: white;
 }
+
 
 
 
@@ -288,168 +305,197 @@ h3 {
 }
 
 @media (width<=1280px) {
-  main{
-    display: flex;
-    flex-direction:column;
-  justify-content: center;
-  align-items: center;
-    height: 100vh;
-
-  }
-  html{
-    font-size: 60.5%;
-  }
-  p{
-    font-size:2rem;
-  }
-  
-  .project ul{
-    margin: 0rem 7rem;
-  }
-  .icon-list img{
-    width:5%
-  }
-  .connection{  
+  main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-bottom:0rem;
+
   }
+
+  html {
+    font-size: 60.5%;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .project ul {
+    margin: 0rem 7rem;
+  }
+
+  .icon-list img {
+    width: 10%
+  }
+
+  .connection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 0rem;
+  }
+
   .info ul {
     justify-content: start;
-    }
-    .btn-two{
-      font-size: 1.25rem;
-  font-weight:bold;
-    }
-}
-@media (width<=880px) {
-  main{
-    height: 120vh;
-    
   }
-  .primary{
+
+  .btn-two {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
+
+@media (width<=880px) {
+  main {
+    height: 120vh;
+
+  }
+
+  .primary {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    flex-direction: column;}
+    flex-direction: column;
+  }
 
-    .profile-image{
-      width: 100%;
-    }
+  .profile-image {
+    width: 100%;
+  }
 
-  html{
+  html {
     font-size: 50.5%;
   }
-  p{
-    font-size:2.5rem;
+
+  p {
+    font-size: 2.5rem;
   }
-  .project img{
+
+  .project img {
     width: 50%;
   }
-  .icon-list img{
-    width:8%
+
+  .icon-list img {
+    width: 10%
   }
+
   .info ul {
-justify-content: start;
-}
-.connection{  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.links img{
-  width: 15%;
-}
-.connect-heading{
-  font-size: 5rem;}
-  .certificate{
+    justify-content: start;
+  }
+
+  .connection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .links img {
+    width: 15%;
+  }
+
+  .connect-heading {
+    font-size: 5rem;
+  }
+
+  .certificate {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .btn-two{
+
+  .btn-two {
     font-size: 1.75rem;
-font-weight:bold;
+    font-weight: bold;
   }
 }
 
 @media (width<=672px) {
-  main{
+  main {
     height: 100vh;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 
 
   }
-  .primary{
+
+  .primary {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  html{
+
+  html {
     font-size: 40.5%;
   }
-  h3{
-    font-size:4rem;
+
+  h3 {
+    font-size: 4rem;
   }
-  p{
-    font-size: 3rem ;
+
+  p {
+    font-size: 3rem;
   }
-  .project ul{
-    margin: 0rem 0rem;
+
+  .project img {
+    width: 70%;
   }
-  .project img{
-    width: 50%;
+
+  .icon-list img {
+    width: 10%
   }
-  .icon-list img{
-    width:10%
-  }
-  .links img{
+
+  .links img {
     width: 20%;
   }
-  .connect-heading{
-    font-size: 5rem;}
-    .certificate{
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
-    .btn-two{
-      font-size: 1.5rem;
-  font-weight:bold;
-    }
+
+  .connect-heading {
+    font-size: 5rem;
+  }
+
+  .certificate {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .btn-two {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 
 @media (width<=500px) {
-  
-  main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 
 
 
-  html{
+  html {
     font-size: 35.5%;
   }
-  h1{
+
+  h1 {
     font-size: 5rem;
     padding: 2rem;
     margin-left: 4rem;
   }
-  .primary{
+
+  .primary {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -458,77 +504,96 @@ font-weight:bold;
     margin-bottom: 30rem;
   }
 
-  h3{
-    font-size:2.5rem;
-    margin-top:6rem;
+  h3 {
+    font-size: 2.5rem;
+    margin-top: 6rem;
     margin-left: 3rem;
   }
-  .about-2{
+
+  .about-2 {
     margin-top: 12rem;
   }
-  p{
-    font-size: 2rem ;
+
+  p {
+    font-size: 2rem;
   }
-  .about p{
+
+  .about p {
     margin-left: 3.75rem;
   }
-  
-  .project img{
-    width: 100%;
+
+  .project img {
+    width: 85%;
   }
-  .icon-list img{
-    width:10%;
+
+  .icon-list img {
+    width: 15%;
     margin-left: -2rem;
-    
+
   }
- 
-.project a{
-  width: 110px;
-padding: 0rem 5rem;
-text-align:center ;
-font-size: 2rem;
-}
+
+  .project a {
+    padding: 0rem 5rem;
+    font-size: 2rem;
+
+  }
+
+  .project ul {
+    display: flex;
+    flex-direction: column;
 
 
+  }
 
-.nav-bar{
-  margin: 0.8rem;
-  font-size: 1.75rem;
-}
-.random{
-  font-size: 2.5rem;
-}
+  .names {
+    padding: 10rem;
+    height: 40rem;
+    width: 60rem;
+  }
 
-.connection{  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin-left: -20rem;
-  margin-bottom:0rem;
-}
-.links img{
-  width: 20%;
-  margin-left: -20rem;
-}
-.connect-heading{
-  font-size: 5rem;
-  margin-left: 20rem;
-}
-.certificate{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
+  .nav-bar {
+    margin: 0.8rem;
+    font-size: 1.75rem;
+  }
 
-.btn-two{
-  margin-left: 5.5rem;
-  font-size: 1.5rem;
-  font-weight:bold;
+  .random {
+    font-size: 2.5rem;
+  }
 
-}
+  .connection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: -20rem;
+    margin-bottom: 0rem;
+  }
+
+  .links img {
+    width: 20%;
+    margin-left: -20rem;
+  }
+
+  .connect-heading {
+    font-size: 5rem;
+    margin-left: 20rem;
+  }
+
+  .certificate {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .btn-two {
+    margin-left: 5.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+  }
+
 
 
 }
