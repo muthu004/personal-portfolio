@@ -523,14 +523,15 @@ h3 {
   }
 
   .project img {
-    width: 85%;
+    width: 80%;
   }
 
   .icon-list img {
-    width: 15%;
-    margin-left: -2rem;
+    width: 20%;
 
   }
+
+  
 
   .project a {
     padding: 0rem 5rem;
@@ -548,7 +549,7 @@ h3 {
   .names {
     padding: 10rem;
     height: 40rem;
-    width: 60rem;
+    width: 50rem;
   }
 
   .nav-bar {
